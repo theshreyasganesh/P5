@@ -33,24 +33,33 @@ class TopBar extends React.Component {
   render() {
     const { user } = this.state;
     const userName = user ? `${user.first_name} ${user.last_name}` : 'Unknown User';
+    const occupation = user ? user.occupation : 'Occupation not specified';
     const currentPath = window.location.href;
     let headingText = ''; // Default heading text
 
     if (currentPath.includes('/photos/')) {
-       headingText = `Photos of ${userName}`;
+      headingText = `Photos of ${userName}`;
     } else if (currentPath.includes('/users/')) {
-       headingText = `Details of ${userName}`;
+      headingText = `Details of ${userName}`;
     }
 
     return (
       <AppBar className="topbar-appBar" position="absolute">
-        <Toolbar>
-          <div className="centered-content">
-            <Typography variant="h4" color="inherit" className="topbar-stann">
-              STANN 
+        <Toolbar className="topbar-centered"> {/* Add the "topbar-centered" class */}
+          <div className="left-content topbar-left"> {/* Add the "topbar-left" class */}
+            <Typography variant="h4" color="inherit" className="topbar-app-name">
+              STANN
             </Typography>
             <Typography variant="h5" color="inherit" className="topbar-heading">
               {headingText}
+            </Typography>
+          </div>
+          <div className="user-info-topbar">
+            <Typography variant="h6" color="inherit" className="user-name-topbar">
+              {userName}
+            </Typography>
+            <Typography variant="caption" color="inherit" className="user-occupation-topbar">
+              {occupation}
             </Typography>
           </div>
         </Toolbar>
@@ -60,6 +69,3 @@ class TopBar extends React.Component {
 }
 
 export default TopBar;
-
-
-

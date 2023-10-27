@@ -1,18 +1,17 @@
-.topbar-appBar {
-  height: 80px;
-  display: flex;
-  justify-content: space-between;
+/* CSS */
+
+.topbar-centered {
+  justify-content: right; 
+}
+
+.topbar-left {
   align-items: center;
-  padding: 0 20px; /* Add horizontal padding to the AppBar content */
 }
 
+.topbar-app-name,
 .topbar-heading {
-  margin-left: 20px;
-}
-
-/* Center STANN Typography and headingText */
-.topbar-heading,
-.topbar-stann {
   text-align: center;
-  width: 100%; /* Ensure they take the full width */
+}
+.user-info-topbar{
+  margin-left: 500px;
 }
