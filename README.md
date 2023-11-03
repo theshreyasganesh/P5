@@ -1,5 +1,25 @@
 # P5
 Project 5 - Team STANN
+
+# Project-6
+
+# SCRUM TEAM
+
+# Product Owner
+Nishit Shah
+
+Neketha Suresh
+
+# SCRUM MASTER
+Shreyas Ganeshguru 
+
+# Developers
+Lythe Elhulu
+
+Tanvi Garg
+
+Akriti Saxena
+
 # Photo Sharing Application
 This project is a Single Page Application (SPA) built using ReactJS and Material-UI. It allows users to view a list of users, view details of a specific user, and explore photos uploaded by users. The application utilizes React Router for navigation and provides a Master-Detail pattern layout.
 # Setup
